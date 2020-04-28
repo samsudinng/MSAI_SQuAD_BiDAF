@@ -10,15 +10,26 @@ conda env create -f environment.yml
 conda activate squad_baseline
 ```
 
-Next, download the GloVE pre-trained word vectors glove.840d.300d.zip from the following link:
+Next, download the file __*data.zip*__ containing the processed dataset, embedding vectors and GloVE pre-trained word vectors *glove.840d.300d.txt* from the following link:
 
-http://nlp.stanford.edu/data/glove.840B.300d.zip
+https://drive.google.com/open?id=1cPpDSnXKm-Grh7yW8nU3EQq1skfVBBnm
 
-Unzip the file in the /data folder. The glove vectors __*glove.840B.300d.txt*__ should be located in the folder /data/glove.840B.300d/ 
+Unzip the file in the same folder as the script files. If you setup correctly, you should have a /data folder in the same folder as the script files containing the following files:
+- char_emb.json
+- char2idx.json 
+- word_emb.json
+- word2idx.json
+- dev.npz
+- train.npz
+- test.npz
+- /glove.840B.300d/glove.840B.300d.txt
+
+If all the files are present, you're good to go.
+
 
 ## Train and evaluate
 
-To train baseline model with character-level embedding, use this command:
+To train baseline model WITH character-level embedding, use this command:
 
     python train.py --name <label>
 
@@ -27,7 +38,7 @@ Example:
 python train.py --name baseline_char_embed
 ```
 
-To train baseline model without character-level embedding, use this command:
+To train baseline model WITHOUT character-level embedding, use this command:
 
     python train.py --name <label> --use_char_emb 0
 
