@@ -3,7 +3,8 @@
 
 ## Set up environment
 
-To setup and install dependencies, create and activate conda environment for squad baseline as follows.
+To setup and install dependencies, clone or download this repository into your local machine. 
+Create and activate conda environment for squad baseline with the following command.
 
 ```shell script
 conda env create -f environment.yml
@@ -14,7 +15,7 @@ Next, download the file __*data.zip*__ containing the processed dataset, embeddi
 
 https://drive.google.com/open?id=1cPpDSnXKm-Grh7yW8nU3EQq1skfVBBnm
 
-Unzip the file in the same folder as the script files. If you setup correctly, you should have a /data folder in the same folder as the script files containing the following files:
+Unzip the file in the same folder as the script files. If you setup correctly, you should have a folder /data  in the same folder as the script files. The folder shoud contain the following files:
 - char_emb.json
 - char2idx.json 
 - word_emb.json
@@ -29,7 +30,7 @@ If all the files are present, you're good to go.
 
 ## Train and evaluate
 
-To train baseline model WITH character-level embedding, use this command:
+### 1. To train baseline model WITH character-level embedding, use this command:
 
     python train.py --name <label>
 
@@ -38,7 +39,7 @@ Example:
 python train.py --name baseline_char_embed
 ```
 
-To train baseline model WITHOUT character-level embedding, use this command:
+### 2. To train baseline model WITHOUT character-level embedding, use this command:
 
     python train.py --name <label> --use_char_emb 0
 
