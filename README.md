@@ -15,15 +15,20 @@ Next, download the file __*data.zip*__ containing the processed dataset, embeddi
 
 https://drive.google.com/open?id=1cPpDSnXKm-Grh7yW8nU3EQq1skfVBBnm
 
-Unzip the file in the same folder as the script files. If you setup correctly, you should have a folder /data  in the same folder as the script files. The folder shoud contain the following files:
-- char_emb.json
-- char2idx.json 
-- word_emb.json
-- word2idx.json
-- dev.npz
-- train.npz
-- test.npz
-- /glove.840B.300d/glove.840B.300d.txt
+Unzip the file and place the entre /data folder in the same folder as the script files. If you setup correctly, the scripts and data shoud be in the following structure:
+- args.py
+- train.py
+- models.py
+- layers.py
+- util.py
+- /data/char_emb.json
+- /data/char2idx.json 
+- /data/word_emb.json
+- /data/word2idx.json
+- /data/dev.npz
+- /data/train.npz
+- /data/test.npz
+- /data/glove.840B.300d/glove.840B.300d.txt
 
 If all the files are present, you're good to go.
 
