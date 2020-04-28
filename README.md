@@ -15,7 +15,7 @@ Next, download the file __*data.zip*__ containing the processed dataset, embeddi
 
 https://drive.google.com/open?id=1cPpDSnXKm-Grh7yW8nU3EQq1skfVBBnm
 
-Unzip the file and place the entre /data folder in the same folder as the script files. If you setup correctly, the scripts and data shoud be in the following structure:
+Unzip the file and place the entire /data folder in the same folder as the script files. If you setup correctly, the scripts and data shoud be in the following structure:
 - args.py
 - train.py
 - models.py
